@@ -87,8 +87,9 @@ function validate() {
 form.addEventListener("submit", evento=>{
     let isValid = validate()
     if(isValid == true) {
-        alert('Dados cadastrados com sucesso!')
-        
+        alert('Dados cadastrados com sucesso!')   
+    }else{
+        evento.preventDefault()
     }
 });
 
