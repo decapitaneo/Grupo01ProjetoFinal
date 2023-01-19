@@ -1,12 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criando por enquanto</title>
-</head>
-<body>
-    <h1> texto</h1>
-</body>
+  <head>
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAB Cosmetics</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/contato.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;family=Poppins:wght@200;300;400;500;600;700&amp;family=Roboto:ital,wght@0,400;1,700&amp;family=Source+Sans+3:ital,wght@0,300;0,800;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="img/fabnew.png" width="300px" height="87px" alt="" />
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="#MenuItems">Home</a></li>
+              <li><a href="#produtos">Produtos</a></li>
+              <li><a href="#contato">Contato</a></li>
+              <li><a href="#sobreNos">Sobre nós</a></li>
+            </ul>
+          </nav>
+          <img src="./img/cart_nav-removebg-preview.png" alt="" width="30px" height="30px" />
+          <img
+            src="./img/menu_hamburger.png"
+            alt=""
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <h1> Dê a sua saúde
+                 <br />a beleza que ela merece!</h1>
+            <p>
+                Beleza não é só ser bonito <br />
+                também é ser saudável!
+            </p>
+            <a href="#produtos" class="btn">Explore Agora &#8594; </a>
+          </div>
+          <div class="col-2">
+            <img src="./img/banner.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="./img/batom.jpeg" alt="" width="309px" height="339px"/>
+          </div>
+          <div class="col-3">
+            <img src="./img/unhas.jpeg" alt="" width="309px" height="339px"/>
+          </div>
+          <div class="col-3">
+            <img src="./img/pele.jpg" alt="" width="309px" height="339px"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="title" id="produtos">Nossos Lançamentos</h2>
+    <div class="row">
+      <div class="col-4">
+        <img src="./img/f_hair.png" alt="" />
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h4>Produtos Capilares</h4>
+      </div>
+      <div class="col-4">
+        <img src="./img/f_unhas3.png" alt="" />
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h4>Produtos</h4>
+      </div>
+      <div class="col-4">
+        <img src="./img/f_perfume.png" alt="" />
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h4>Linha Perfumaria</h4>
+      </div>
+      <div class="col-4">
+        <img src="./img/f_makeup.png" alt="" />
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h4>Linha Make Up</h4>
+      </div>
+    
+      <div class="row">
+        <div class="col-4">
+          <img src="./img/f_unhas2.png" alt="" />
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h4>Linha</h4>
+        </div>
+        <div class="col-4">
+          <img src="./img/f_sombra.png" alt="" />
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h4>Linhat</h4>
+        </div>
+        <div class="col-4">
+          <img src="./img/makeMasculino.jpeg" alt="" />
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h4>Linha</h4>
+        </div>
+        <div class="col-4">
+          <img src="./img/casal.jpeg" alt="" />
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h4>Linha</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="./img/offer.png" alt="" class="offer-img" />
+          </div>
+          <div class="col-2">
+            <p>Marca registrada da nossa empresa</p>
+            <h1>Linha de produtos completa </h1>
+            <small>
+              Ofecemos no mercado produtos de qualidade com a sofisticação que os nossos clientes merecem. Nossos produtos utilizam a matéria prima que a nossa biodiversidade produz e ainda contamos com a colaboração do nosso povo.<br />
+            </small>
+            <a href="#produtos" class="btn">Compre Agora &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <div class="web_to_lead" id="contato">
+                <h2>Fale Conosco</h2>
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" name="myForm">
+    
+                  <input type=hidden name="oid" value="00DDn000007pFp8">
+                  <input type=hidden id="lead_source" name="lead_source" value="Web">
+                  <input type=hidden name="retURL" value="http://www.google.com">
+              
+                  <div class="user-box">
+                      <label for="first_name">Primeiro Nome</label>
+                      <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /> 
+                  </div>
+                         
+                  <div class="user-box">
+                    <label for="last_name">Sobrenome</label>
+                    <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /> 
+                  </div>
+                 
+                  
+                  <div class="user-box">
+                    <label for="phone">Telefone</label>
+                    <input  id="phone" maxlength="40" name="phone" size="20" type="text" />   
+                  </div>
+                  <small id="emailValidation"></small>
+                  <div class="user-box">
+                      <label for="email" id="labelEmail">Email</label>
+                      <input  id="email" maxlength="80" name="email" size="20" type="text"/>
+                  </div> <br>
+                  
+                  <div class="user-box" id="estado">
+                      Estado: <select  id="00NDn00000Nf1kl" name="00NDn00000Nf1kl" title="Estado">
+                 
+                          <option value="">-- Nenhum --</option><option value="AC">AC</option>
+                          <option value="AL">AL</option>
+                          <option value="AP">AP</option>
+                          <option value="AM">AM</option>
+                          <option value="BA">BA</option>
+                          <option value="CE">CE</option>
+                          <option value="DF">DF</option>
+                          <option value="ES">ES</option>
+                          <option value="GO">GO</option>
+                          <option value="MA">MA</option>
+                          <option value="MT">MT</option>
+                          <option value="MS">MS</option>
+                          <option value="MG">MG</option>
+                          <option value="PA">PA</option>
+                          <option value="PB">PB</option>
+                          <option value="PR">PR</option>
+                          <option value="PE">PE</option>
+                          <option value="PI">PI</option>
+                          <option value="RJ">RJ</option>
+                          <option value="RN">RN</option>
+                          <option value="RS">RS</option>
+                          <option value="RO">RO</option>
+                          <option value="RR">RR</option>
+                          <option value="SC">SC</option>
+                          <option value="SP">SP</option>
+                          <option value="SE">SE</option>
+                          <option value="TO">TO</option>
+                          </select>
+                  </div> <br>
+                  <div class="user-box">
+                      <label for="city">Cidade</label>
+                      <input  id="city" maxlength="40" name="city" size="20" type="text" />
+                  </div>
+                  <div class="user-box">
+                      <label for="msg">Mensagem</label>
+                      <textarea id="msg" name="msg" rows="4" cols="50"></textarea>
+                  </div>
+              
+                  <!-- <input type="submit" name="submit">   -->
+                  <button id="enviar" type="submit" name="submit">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      Enviar
+                 </button> 
+                      
+                  
+              </form> 
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="about" id="sobreNos">
+                <h2>Sobre nós</h2>
+                <p> FAB Cosmetics é uma empresa que surgiu no ano de 1996 com o objetivo de suprir a necessidade do mercado de cosméticos no Brasil, a CEO Fabiana Araújo  observou uma carência em determinadas regiões do país e resolveu criar o melhor da beleza para devolver a autoestima e mostrar que o empoderamento feminino se torna cada vez mais forte!
+                </p>
+                <p> Nada melhor do que uma mulher no poder para a contribuição de levar até outra mulher aquilo que só elas entendem! Como todo excelente negócio, a empresa surgiu a partir de uma pequena lojinha situada em ( local da loja ) que começou a crescer exponencialmente, criando assim, a necessidade de outras lojas físicas, até um ponto que se tornou inevitável a produção de um e-commerce e com isso houve uma grande explosão de sucesso da empresa, levando o nome da marca para todo Brasil.     
+                </p>
+                <p>
+                    Hoje contamos com mais de 100 lojas espalhadas pelo país e com nossa fábrica situada em Paracatu - MG com mais de mil colaboradores especializados nos mais diversos ramos da beleza, tudo pensado da melhor maneira somente para você! Nossas políticas envolvem o projeto (PLC 70/2014) que proíbe o uso de animais testes para a produção de cosméticos.
+                </p>
+                <h3>Missão</h3>
+                <p>Desenvolver cosméticos com qualidade elevando a competitividade, aumentando a lucratividade e a satisfação de clientes, parceiros e colaboradores. Nossa maior razão de existir no mercado é promover saúde e beleza e bem estar.</p>
+                <h3>Visão</h3>
+                <p>Ser reconhecida no mercado brasileiro e internacional, crescendo cada vez mais, focando na oferta de um produto com uso de matéria prima local no mercando estrangeiro visando a excelência.</p>
+                <h3>Valores</h3>
+                <p> Seguir os precietos éticos, respeitando o ser humano e o meio ambiente com  amor e dedicação. Acreditar na alma do nosso negócio.</p>  
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="testimonial">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+                Amei a qualidade das maquiagens, não deixaram meu rosto marcado. A estimativa de entrega foi superada e recebi meus produtos muito antes do tempo previsto com uma embalagem impecável.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <img src="./img/depoimento1.png" alt="" height="50px" width="50px" />
+            <h3>Paula Soares</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+                A minha escolha favorita foi o perfume inspirado na flora do Cerrado com alta durabilidade e um olor inigualável. A essência remete o amanhecer do Cerrado e me lembra o orvalho da manhã.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <img src="./img/depoimento2.png" alt="" />
+            <h3>Ana Catarina</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+                Sempre acabo optando por efetuar minhas compras na FAB Cosmetics devido a qualidade ofertada. Todos os produtos no qual já adquiri (hidratante, makes, rímel …) com excelente qualidade.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <img src="./img/depoimento3.png" alt="" />
+            <h3>Joelma Rosa</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Parceiros</h3>
+            <div class="app-logo">
+                <img src="./img/logo_soulCode.png" alt="" />
+            </div>
+            <div class="app-logo">
+                <img src="./img/logo_eletromidia.png" alt="" />
+            </div>
+            <div class="app-logo"> 
+              <img src="./img/logo_tnt.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-4">
+            <h3>Redes Sociais</h3>
+            <ul>
+              <li><a href="https://www.instagram.com/fabcosmetics.96/">Instagram</a></li>
+              <li><a href="https://www.instagram.com/fabcosmetics.96/">Facebook</a></li>
+              <li> <a href="https://www.instagram.com/fabcosmetics.96/">Youtube</a></li>
+            </ul>
+          </div>
+          <div class="footer-col-2">
+            <img src="./img/fabnew.png" alt="" />
+            <p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3811.0302062795336!2d-46.870748799999994!3d-17.2173239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a84a796fde25cb%3A0x41f547116dce7684!2sAv.%20Oleg%C3%A1rio%20Maciel%2C%20166%2C%20Paracatu%20-%20MG%2C%2038600-000!5e0!3m2!1spt-BR!2sbr!4v1673878315107!5m2!1spt-BR!2sbr" width="250" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
+            </p>
+          </div>
+    
+          
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2023 - FAB Cosmetics</p>
+      </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/contato.js"></script> 
+  </body>
 </html>
