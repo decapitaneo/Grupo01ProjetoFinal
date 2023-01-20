@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -378,7 +379,7 @@
       background:  #711E34;
       width: 100%;
       overflow: hidden; /*it will hide the ul when the user click on the menu icon*/
-      transition: max-height 0.5s; /*suave*/
+      transition: max-height 0.5s; 
     }
   
     nav ul li {
@@ -411,6 +412,16 @@
     .about p {
     font-size: 0.75rem;
     font-size: 1rem;
+    }
+  
+    .row {
+      text-align: center;
+    }
+  
+    .col-2,
+    .col-3,
+    .col-4 {
+      flex-basis: 100%;
     }
   }
   

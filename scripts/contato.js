@@ -1,34 +1,3 @@
-/*
-const primeiroNome = document.getElementById("first_name");
-const sobrenome = document.getElementById("last_name");
-const email = document.getElementById("email");
-const celular = document.getElementById("mobile");
-const mensagem = document.getElementById("description");
-
-document.getElementById("webToLeadForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-    enviarWebToLead(e.target);
-  });
-
-function enviarWebToLead(form){
-
-    const primeiroNome = document.getElementById("first_name");
-    const sobrenome = document.getElementById("last_name");
-    const email = document.getElementById("email");
-    const celular = document.getElementById("phone");
-    const mensagem = document.getElementById("msg");
-    const cidade = document.getElementById("city")
-    const estado = document.getElementById("00NDn00000Nf1kl")
-    console.log(estado.value)
-    const webToLeadUrl = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
-    
-    const body = {
-        first_name: primeiroNome.value,
-        last_name: sobrenome.value
-    }
-}
-*/
-
 let form = document.querySelector("form")
 
 function validateEmail(email) {
@@ -73,9 +42,9 @@ function validate() {
     }else if(document.myForm.city.value == ""){
         alert("Selecione uma Cidade!")
         document.myForm.city.focus()
-    }else if (document.myForm.msg.value == ""){
-        alert("Digite a sua mensagem!")
-        document.myForm.msg.focus()
+    }else if (myForm.first_name.value == myForm.last_name.value) {
+        alert("O nome e o sobrenome não podem ser iguais")
+        document.myForm.last_name.focus()
     }
     else {
         isValid = true
